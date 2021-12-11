@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "next-lint": "next lint",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix"
   },
   "dependencies": {
     "autoprefixer": "^10.4.0",
@@ -19,8 +21,16 @@
   "devDependencies": {
     "@types/node": "16.11.12",
     "@types/react": "17.0.37",
-    "eslint": "8.4.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb": "^19.0.2",
     "eslint-config-next": "12.0.7",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.5.1",
     "typescript": "4.5.3"
   }
 }
