@@ -33,6 +33,7 @@ const ExperementCard: FunctionComponent = () => {
             <Heading5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Heading5>
           </motion.div>
           <div className="max-w-4xl">
+            <p className="text-right"></p>
             <Heading4 alignment="right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Heading4>
           </div>
           <Heading2 alignment="right">Sed ut perspiciatis unde</Heading2>
