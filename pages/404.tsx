@@ -6,7 +6,7 @@ const _404: NextPage = () => {
   return (
     <div>
       <TheLayout>
-        <div>
+        <div className="text-center">
           <Heading1 alignment="center">404</Heading1>
         </div>
       </TheLayout>
