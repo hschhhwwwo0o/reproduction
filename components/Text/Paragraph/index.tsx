@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
 
-const Paragraph: FunctionComponent<IText> = ({ children }) => {
+const Paragraph: FunctionComponent<IText> = ({ children, alignment = "justify" }) => {
   return (
     <>
-      <p className="text-justify uppercase text-sm">{children}</p>
+      <p className={`uppercase text-sm text-white text-${alignment}`}>{children}</p>
     </>
   );
 };
