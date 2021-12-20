@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const FilmsCard: FunctionComponent = () => {
   return (
     <>
-      <motion.div className="flex flex-col" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
+      <motion.div className="flex flex-col" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.3 }}>
         <div className="h-10 lg:h-96"></div>
         <div className="w-full">
           <img src="images/film.jpg" alt="" />

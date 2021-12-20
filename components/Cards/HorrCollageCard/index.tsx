@@ -11,7 +11,7 @@ const HorrCollageCard: FunctionComponent = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-11">
-        <motion.div className="lg:w-2/12" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
+        <motion.div className="lg:w-2/12" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
           <Paragraph>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
             illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
@@ -31,7 +31,13 @@ const HorrCollageCard: FunctionComponent = () => {
             />
           </div>
           <div className="w-3/12 flex flex-col justify-end">
-            <motion.img src="images/shop.jpg" alt="" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} />
+            <motion.img
+              src="images/shop.jpg"
+              alt=""
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            />
           </div>
         </div>
       </div>
@@ -52,7 +58,7 @@ const HorrCollageCard: FunctionComponent = () => {
               ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius mod///
             </Paragraph>
           </motion.div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
             <Heading2 alignment="right">Sed ut perspiciatis ERROR</Heading2>
           </motion.div>
           <motion.div>
@@ -69,7 +75,7 @@ const HorrCollageCard: FunctionComponent = () => {
               perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
             </Heading5>
           </motion.div>
-          <motion.div className="max-w-4xl" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
+          <motion.div className="max-w-4xl" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
             <Heading4 alignment="right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Heading4>
           </motion.div>
         </div>
