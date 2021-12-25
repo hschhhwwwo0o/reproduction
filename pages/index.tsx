@@ -7,6 +7,7 @@ import ExperementCard from "../components/Cards/ExperementCard";
 import WonderCard from "../components/Cards/WonderCard";
 import TextGridCard from "../components/Cards/TextGridCard";
 import HorrCollageCard from "../components/Cards/HorrCollageCard";
+import MaskOffCard from "../components/Cards/MaskOffCard";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,9 @@ const Home: NextPage = () => {
           </div>
           <div className="mt-10 lg:mt-60">
             <HorrCollageCard />
+          </div>
+          <div className="mt-10 lg:mt-60">
+            <MaskOffCard />
           </div>
         </div>
       </TheLayout>

@@ -1,10 +1,9 @@
 import React, { FunctionComponent } from "react";
+import { motion } from "framer-motion";
 import Heading2 from "../../Text/Heading2";
 import Heading4 from "../../Text/Heading4";
 import Heading5 from "../../Text/Heading5";
 import Paragraph from "../../Text/Paragraph";
-
-import { motion } from "framer-motion";
 import Heading3 from "../../Text/Heading3";
 
 const HorrCollageCard: FunctionComponent = () => {
@@ -62,7 +61,7 @@ const HorrCollageCard: FunctionComponent = () => {
             <Heading2 alignment="right">Sed ut perspiciatis ERROR</Heading2>
           </motion.div>
           <motion.div>
-            <Heading5>
+            <Heading5 alignment="justify">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste
               natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
               doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut
