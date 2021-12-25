@@ -12,13 +12,18 @@ const MaskOffCard: FunctionComponent = () => {
       <div>
         <Heading4>66666666666666</Heading4>
       </div>
-      <div className="flex flex-row gap-16 mt-8">
-        <div className="w-2/3">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 mt-8">
+        <div className="w-full lg:w-2/3">
           <div>
             <motion.img src="images/mask.jpg" alt="" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.2 }} />
           </div>
-          <div className="flex flex-row justify-between mt-14">
-            <motion.div className="max-w-xl" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.2, delay: 0.8 }}>
+          <div className="flex flex-row justify-between mt-10 lg:mt-14">
+            <motion.div
+              className="lg:max-w-xl w-10/12 lg:w-full"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.2, delay: 0.8 }}
+            >
               <Heading5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Heading5>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 1 }}>
@@ -31,7 +36,7 @@ const MaskOffCard: FunctionComponent = () => {
               minim veniam,
             </Heading3>
           </motion.div>
-          <div className="mt-8 grid grid-cols-2 gap-8">
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.2 }}>
               <Paragraph alignment="justify">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -60,7 +65,8 @@ const MaskOffCard: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/3 flex flex-col gap-6">
+        <p className="text-justify text-red-700"></p>
+        <div className="w-full lg:w-1/3 flex flex-col gap-6">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.8 }}>
             <Paragraph alignment="justify">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -115,8 +121,8 @@ const MaskOffCard: FunctionComponent = () => {
         <motion.img src="images/HEAD6.jpg" alt="" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1.6 }} />
         <motion.img src="images/HEAD7.jpg" alt="" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.7, delay: 1.7 }} />
       </div>
-      <div className="flex flex-row gap-14 mt-16">
-        <div className="w-8/12 flex flex-col gap-6">
+      <div className="flex flex-col lg:flex-row gap-14 mt-10 lg:mt-16">
+        <div className="w-full lg:w-8/12 flex flex-col gap-6">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
             <Paragraph>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -169,7 +175,7 @@ const MaskOffCard: FunctionComponent = () => {
             </Paragraph>
           </motion.div>
         </div>
-        <div className="w-4/12 flex flex-col gap-6">
+        <div className="w-full lg:w-4/12 flex flex-col gap-6">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.1 }}>
             <Paragraph>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
