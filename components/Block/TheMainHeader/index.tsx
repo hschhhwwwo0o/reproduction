@@ -1,8 +1,27 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import Heading1 from "../../Text/Heading1";
 import { motion } from "framer-motion";
 
 const MainHeader: FunctionComponent = () => {
+  const [currentColor, setCurrentColor] = useState<"text-white" | "text-black" | "text-red-700">("text-black");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentColor === "text-black") {
+        if (Math.random() < 0.95) {
+          setCurrentColor("text-white");
+        } else {
+          setCurrentColor("text-red-700");
+        }
+      } else {
+        setCurrentColor("text-black");
+      }
+    }, 90);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentColor]);
+
   const spanStyle = (duration: number, y: number, rotate?: number) => {
     return {
       className: "block",
@@ -28,7 +47,7 @@ const MainHeader: FunctionComponent = () => {
             <motion.span {...spanStyle(0.9, 120, 20)}>C</motion.span>
             <motion.span {...spanStyle(2, 120, 8)}>T</motion.span>
             <motion.span {...spanStyle(1.4, 20)}>I</motion.span>
-            <motion.span {...spanStyle(0.2, 50)}>O</motion.span>
+            <motion.span className={currentColor}>O</motion.span>
             <motion.span {...spanStyle(1.6, 170, -12)}>N</motion.span>
           </div>
         </Heading1>
