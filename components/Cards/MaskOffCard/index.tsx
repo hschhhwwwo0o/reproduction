@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Heading2 from "../../Text/Heading2";
 import Heading3 from "../../Text/Heading3";
@@ -7,10 +7,21 @@ import Heading5 from "../../Text/Heading5";
 import Paragraph from "../../Text/Paragraph";
 
 const MaskOffCard: FunctionComponent = () => {
+  const [timer, setTimer] = useState<number>(66666);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer(timer - 1);
+    }, 10);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [timer]);
+
   return (
     <>
       <div>
-        <Heading4>66666666666666</Heading4>
+        <Heading4>{timer}</Heading4>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 mt-8">
         <div className="w-full lg:w-2/3">

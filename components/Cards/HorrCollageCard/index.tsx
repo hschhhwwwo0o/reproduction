@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Heading2 from "../../Text/Heading2";
 import Heading4 from "../../Text/Heading4";
@@ -7,6 +7,26 @@ import Paragraph from "../../Text/Paragraph";
 import Heading3 from "../../Text/Heading3";
 
 const HorrCollageCard: FunctionComponent = () => {
+  const [currentColor, setCurrentColor] = useState<"text-black" | "text-white">("text-black");
+  const [timer, setTimer] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer(timer + 1);
+    }, 70);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [timer]);
+
+  useEffect(() => {
+    if (currentColor === "text-black") {
+      setCurrentColor("text-white");
+    } else {
+      setCurrentColor("text-black");
+    }
+  }, [timer]);
+
   return (
     <>
       <div className="flex flex-col lg:flex-row gap-11">
@@ -62,16 +82,18 @@ const HorrCollageCard: FunctionComponent = () => {
           </motion.div>
           <motion.div>
             <Heading5 alignment="justify">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste
-              natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut
-              perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus
-              error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut
-              perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus
-              error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut
-              perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+              <span className={currentColor}>
+                1111111111111111 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis
+                unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde
+                omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed
+                ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut
+                perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+              </span>
             </Heading5>
           </motion.div>
           <motion.div className="max-w-4xl" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
