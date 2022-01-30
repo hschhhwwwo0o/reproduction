@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { motion } from "framer-motion";
-import Heading3 from "../../Text/Heading3";
-import Heading5 from "../../Text/Heading5";
-import Paragraph from "../../Text/Paragraph";
+import Heading3 from "components/Text/Heading3";
+import Heading5 from "components/Text/Heading5";
+import Paragraph from "components/Text/Paragraph";
 
 const FilmsCard: FunctionComponent = () => {
   return (

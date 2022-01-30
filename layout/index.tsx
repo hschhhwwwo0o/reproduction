@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
+import { AnimatePresence } from "framer-motion";
 
 const ThaLayout: FunctionComponent = ({ children }) => {
   const [title, setTitle] = useState<"REPRODUCTION" | "KILL">("REPRODUCTION");

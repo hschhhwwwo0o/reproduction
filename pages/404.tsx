@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import TheLayout from "../layout/index";
-import Heading1 from "../components/Text/Heading1";
+import TheLayout from "layout/index";
+import Heading1 from "components/Text/Heading1";
 
 const _404: NextPage = () => {
   return (

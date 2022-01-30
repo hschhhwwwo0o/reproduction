@@ -1,10 +1,9 @@
 import React, { FunctionComponent } from "react";
-import Heading3 from "../../Text/Heading3";
-import Heading4 from "../../Text/Heading4";
-import Heading5 from "../../Text/Heading5";
-import Paragraph from "../../Text/Paragraph";
-
 import { motion } from "framer-motion";
+import Heading3 from "components/Text/Heading3";
+import Heading4 from "components/Text/Heading4";
+import Heading5 from "components/Text/Heading5";
+import Paragraph from "components/Text/Paragraph";
 
 const WonderCard: FunctionComponent = () => {
   return (

@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Heading2 from "../../Text/Heading2";
-import Heading3 from "../../Text/Heading3";
-import Heading4 from "../../Text/Heading4";
-import Heading5 from "../../Text/Heading5";
-import Paragraph from "../../Text/Paragraph";
+import Heading2 from "components/Text/Heading2";
+import Heading3 from "components/Text/Heading3";
+import Heading4 from "components/Text/Heading4";
+import Heading5 from "components/Text/Heading5";
+import Paragraph from "components/Text/Paragraph";
 
 const MaskOffCard: FunctionComponent = () => {
   const [timer, setTimer] = useState<number>(66666);

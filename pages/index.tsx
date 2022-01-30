@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
-import TheLayout from "../layout/index";
-import TheMainHeader from "../components/Block/TheMainHeader";
-import WindowCard from "../components/Cards/WindowCard";
-import FilmsCard from "../components/Cards/FilmsCard";
-import ExperementCard from "../components/Cards/ExperementCard";
-import WonderCard from "../components/Cards/WonderCard";
-import TextGridCard from "../components/Cards/TextGridCard";
-import HorrCollageCard from "../components/Cards/HorrCollageCard";
-import MaskOffCard from "../components/Cards/MaskOffCard";
-import TheFooter from "../components/Block/TheFooter";
+import TheLayout from "layout/index";
+import TheMainHeader from "components/Block/TheMainHeader";
+import WindowCard from "components/Cards/WindowCard";
+import FilmsCard from "components/Cards/FilmsCard";
+import ExperementCard from "components/Cards/ExperementCard";
+import WonderCard from "components/Cards/WonderCard";
+import TextGridCard from "components/Cards/TextGridCard";
+import HorrCollageCard from "components/Cards/HorrCollageCard";
+import MaskOffCard from "components/Cards/MaskOffCard";
+import TheFooter from "components/Block/TheFooter";
 
 const Home: NextPage = () => {
   return (

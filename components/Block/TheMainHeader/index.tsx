@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
-import Heading1 from "../../Text/Heading1";
 import { motion } from "framer-motion";
+import Heading1 from "components/Text/Heading1";
 
 const MainHeader: FunctionComponent = () => {
   const [currentColor, setCurrentColor] = useState<"text-white" | "text-black" | "text-red-700">("text-black");
