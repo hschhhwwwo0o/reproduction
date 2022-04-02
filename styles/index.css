@@ -5,3 +5,11 @@
 body::-webkit-scrollbar {
   width: 0 !important;
 }
+
+img {
+  pointer-events: none;
+}
+
+* {
+  user-select: none;
+}
